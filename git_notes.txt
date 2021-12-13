@@ -1,11 +1,29 @@
+---- GIT AND LOCAL REPOSITORIES 
+
 // OPEN FILE: to open files via command line, use the command 'start'.
+
 // ls -a will show all the files (including hidden files such as .git when first initialised) 
 	in your working directory
+
 // in order to start tracking the changes made to files via git, then we need to add the file 
 	to a staging area.
-// GIT STATUS: to see what is currently in the staging area, the command is 'git status'
+
+// GIT STATUS: to see what is currently in the staging area, the command is 'git status'.
+	this also shows what files have been modified without being commited yet.
+
 // GIT ADD: in order to add it to the staging area (the file is currently in the working directory) 
 	and start tracking changes, we use the command 'git add {filename}'
+	'git add .' adds every file into the staging area from the folder.
+
 // COMMIT: to commit the file under version control, the command is 'git commit -m {message}'
+	This places the file into your local repository.
+
 // LOG: to see what commits you have made, use the 'git log' command - the hash uniquly identifies 
 	the particular commit.
+
+// GIT DIFF: the command 'git diff {filename}' shows what unsaved changes have been made to the file
+
+// GIT CHECKOUT: this command will revert back to the last saved version 'git checkout {filename}'
+
+---- GITHUB AND REMOTE REPOSITORIES
+
