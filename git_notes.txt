@@ -1,4 +1,4 @@
----- GIT AND LOCAL REPOSITORIES 
+---- GIT AND LOCAL REPOSITORIES ----
 
 // OPEN FILE: to open files via command line, use the command 'start'.
 
@@ -25,5 +25,48 @@
 
 // GIT CHECKOUT: this command will revert back to the last saved version 'git checkout {filename}'
 
----- GITHUB AND REMOTE REPOSITORIES
+---- GITHUB AND REMOTE REPOSITORIES ----
 
+// GIT REMOTE: creating a remote repository. command 'git remote add {origin} {url of remote repository from github}'. 
+	can call origin anything but this is the conventional way.
+
+// GIT PUSH: pushes local repository to the remote repository using the -u flag. 
+	name of remote: origin
+	name of branch: master
+	command: 'git push -u origin master'
+
+---- GITIGNORE (passwords, api keys that you dont want to be open sourced on github) ----
+
+// to remove all files from the staging area we use: 'git rm --cached -r .'
+
+// we create a .gitignore file to store the names of the files we dont want pushed to 
+	our remote repository.
+	We can use '#' in the file to make comments, we can use * to specify a group of files to 
+	be ignored e.g. '*.txt'. This will ignore all the text files. 
+
+// so when we do 'git add .', we see that the files that are gitignored are no longer added to the 
+	staging area.  
+
+--
+
+// CREATE THE FILE: touch .gitignore
+
+// HIDE THE FILE: attrib +h .gitignore
+
+// OPEN THE FILE: start .gitignore
+
+---- GIT CLONE ---- 
+
+// this is a way of getting projects from github and cloning it on your own system.
+
+// once youve cloned a project and cd into it, you can git log to see their commit messages. 
+
+// CLONE: git clone {remote repository url}
+
+---- BRANCHING AND MERGING ----
+
+// NEW BRANCH: git branch {name of new branch}
+
+// CHECK BRANCHES: git branch
+
+// SWITCHING BRANCHES: git checkout {name of branch}
